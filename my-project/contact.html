@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom of Memories</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .btn-outline-primary {
+            color: rgb(229, 142, 148);
+            border-color: rgb(229, 142, 148);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: rgb(215, 122, 128);
+            border-color: rgb(229, 142, 148);
+            color: #fff;
+        }
+
+
+        .btn-primary {
+            background-color: rgb(229, 142, 148);
+            border-color: rgb(229, 142, 148);
+        }
+
+        .btn-primary:hover {
+            background-color: rgb(215, 122, 128);
+            border-color: rgb(215, 122, 128);
+        }
+        footer {
+            text-align: center;
+        }
+
+        footer p{
+            font-family: "Noto Sans Thai", sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="py-3 border-bottom">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="/" class="navbar-brand">
+                        <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="product.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Product
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="sunflower.html">Sunflower</a></li>
+                                    <li><a class="dropdown-item" href="statice.html">Statice</a></li>
+                                    <li><a class="dropdown-item" href="tulip.html">Tulip</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                        <div class="d-flex">
+                            <a href="login.html"><button type="button"
+                                    class="btn btn-outline-primary me-2">Login</button></a>
+                            <a href="signup.html"><button type="button" class="btn btn-primary">Sign-up</button></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- banner -->
+    <div class="header-con">
+
+    </div>
+
+    <!-- content -->
+
+    <div class="container text-center">
+        <div class="row  boxx">
+            <div class="col box box1">
+                <img src="img/Our-Address.png" alt="...">
+                <h3>Our Address</h3>
+                <p>Lorem Ipsum is simply dummy text.</p>
+            </div>
+            <div class="col box box2">
+                <img src="img/Phone-Number.png" alt="...">
+                <h3>Phone Number</h3>
+                <p>0123456789</p>
+            </div>
+            <div class="col box box1">
+                <img src="img/Email-Address.png" alt="...">
+                <h3>Email Address</h3>
+                <p>xxx@spumail.net</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="img/2.webp" alt="Plants" class="img-fluid rounded">
+            </div>
+            <!-- Form Section -->
+            <div class="col-lg-6">
+                <h2 class="mb-4 fw-bold">Send us a message</h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Mail<span class="text-danger">*</span></label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">What's on your mind?<span
+                                class="text-danger">*</span></label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark px-4">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+                <li class="nav-item dropdown">
+                    <a href="product.html" class="nav-link px-2 text-body-secondary dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Product
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="sunflower.html">Sunflower</a></li>
+                        <li><a class="dropdown-item" href="statice.html">Statice</a></li>
+                        <li><a class="dropdown-item" href="tulip.html">Tulip</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-secondary">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            </ul>
+            <p>นางสาวพลอย ขันปัญญา 67140009</p>
+            <p>นางสาวสุภาวดี มณฑาทัศน์ 67165557</p>
+            <p>นายชินวัตร ก้านจักร 67132896</p>
+            <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+        </footer>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
